@@ -50,38 +50,38 @@ CodeLib é uma aplicação web que funciona como uma biblioteca pessoal de snipp
 ### Passos para Instalação
 
 1. Clone o repositório:
-\`\`\`bash
+```bash
 git clone https://github.com/GuilhermePeritto/CodeLib.git
 cd CodeLib
-\`\`\`
+```
 
 2. Instale as dependências:
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 3. Configure as variáveis de ambiente:
    - Crie um arquivo `.env.local` na raiz do projeto
    - Adicione as seguintes variáveis:
-\`\`\`
+```
 DATABASE_URL=sua_url_de_conexao_postgresql
-\`\`\`
+```
 
 4. Execute as migrações do banco de dados:
-\`\`\`bash
+```bash
 npm run db:migrate
-\`\`\`
+```
 
 5. Inicie o servidor de desenvolvimento:
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 6. Acesse a aplicação em `http://localhost:3000`
 
 ## 📁 Estrutura do Projeto
 
-\`\`\`
+```
 CodeLib/
 ├── app/                    # Rotas e páginas da aplicação (App Router)
 │   ├── api/                # Rotas de API
@@ -98,7 +98,7 @@ CodeLib/
 │   └── utils.ts            # Funções utilitárias
 ├── public/                 # Arquivos estáticos
 └── ...                     # Arquivos de configuração
-\`\`\`
+```
 
 ## 📊 Modelo de Dados
 
@@ -117,19 +117,19 @@ Para fazer o deploy da aplicação na Vercel:
 
 1. Crie uma conta na [Vercel](https://vercel.com)
 2. Instale a CLI da Vercel:
-\`\`\`bash
+```bash
 npm i -g vercel
-\`\`\`
+```
 
 3. Faça login na sua conta:
-\`\`\`bash
+```bash
 vercel login
-\`\`\`
+```
 
 4. Execute o comando de deploy na raiz do projeto:
-\`\`\`bash
+```bash
 vercel
-\`\`\`
+```
 
 5. Siga as instruções para configurar o projeto
 6. Adicione as variáveis de ambiente necessárias no dashboard da Vercel
